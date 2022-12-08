@@ -1,1 +1,13 @@
-<p>recipe-item works!</p>
+<div class="card col-md-12 p-3" (click)="onSelected()">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card-block">
+        <h6 class="card-title text-right">{{ recipe.name }}</h6>
+        <p class="card-text text-justify">{{ recipe.description }}</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="w-100" />
+    </div>
+  </div>
+</div>
