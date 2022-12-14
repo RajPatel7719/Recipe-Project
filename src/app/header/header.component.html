@@ -5,28 +5,22 @@
     </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a href="#" (click)="onSelect('recipe')" class="nav-link">Recipes</a>
+        <li class="nav-item" routerLinkActive="active">
+          <a routerLink="/recipes" class="nav-link">Recipes</a>
         </li>
-        <li class="nav-item">
-          <a href="#" (click)="onSelect('shopping-list')" class="nav-link"
-            >Shopping List</a
-          >
+        <li class="nav-item" routerLinkActive="active">
+          <a routerLink="/shopping-list" class="nav-link">Shopping List</a>
         </li>
       </ul>
       <div class="d-flex align-items-center">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-right">
           <li class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              role="button"
-              appDropdown
-              >Manage</a
-            >
+            <a href="#" class="nav-link dropdown-toggle" role="button" appDropdown>Manage</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a href="#" class="dropdown-item">Save Data</a></li>
-              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
               <li><a href="#" class="dropdown-item">Fetch Data</a></li>
             </ul>
           </li>
