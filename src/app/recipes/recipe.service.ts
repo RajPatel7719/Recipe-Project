@@ -1,5 +1,5 @@
 import { ShoppingListService } from './../shopping-list/shopping-list.service';
-import { EventEmitter, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Ingredient } from '../shared/ingredients.model';
 import { Recipe } from './recipe.model';
 
@@ -7,8 +7,6 @@ import { Recipe } from './recipe.model';
   providedIn: 'root'
 })
 export class RecipeService {
-
-  recipeSelected = new EventEmitter<Recipe>();
 
   private recipes: Recipe[] = [
     new Recipe('Testy Schnitzel', 'A super-testy Schnitzel - just awesome!', 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Wiener_Schnitzel_-_Chicken_with_Cheese_Sauce_-_plus_Frites_and_a_Green_Salad_-_Walvis_Bay%2C_Namibia.jpg/800px-Wiener_Schnitzel_-_Chicken_with_Cheese_Sauce_-_plus_Frites_and_a_Green_Salad_-_Walvis_Bay%2C_Namibia.jpg?20221128222141', [
